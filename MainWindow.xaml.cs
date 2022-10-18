@@ -33,5 +33,11 @@ namespace ISRPO_Cherednichenko_PR9
             string b = a.Substring(3, 5);
             Itog2.Content = b;
         }
+
+        private void primer2_Click(object sender, RoutedEventArgs e)
+        {
+            Window window1 = new Window1();
+            window1.Show();
+        }
     }
 }
