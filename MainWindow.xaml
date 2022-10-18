@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR9"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Чередниченко ПР9" Height="190.281" Width="230.962">
     <Grid>
+
+        <WrapPanel>
+            <Label x:Name="Dany" Content="ABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+            <Label x:Name="Itog" Content="0" Height="30" Width="100"/>
+            <Label x:Name="Itog2" Content="0" Height="30" Width="100"/>
+            <Button x:Name="Schet" Content="Счет" Width="150" Height="50" Click="Schet_Click"/>
+        </WrapPanel>
         
     </Grid>
 </Window>
