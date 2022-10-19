@@ -23,5 +23,19 @@ namespace ISRPO_Cherednichenko_PR9
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            int count = 0;
+
+            string[] stroka = l1.Text.Split(' ');
+            foreach (var t in stroka)
+                if (Int32.Parse(t) % 2 == 0)
+                    count++;
+
+            tb1.Text = count.ToString();
+
+        }
     }
 }

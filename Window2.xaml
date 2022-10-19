@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR9"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Индивидуальное задание" Height="263.569" Width="366.283">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="108*"/>
+        </Grid.RowDefinitions>
+
+        <ListBox x:Name="lb" Grid.Row="0">
+            <ListBoxItem x:Name="list" Content="Даны числа:" FontWeight="Bold" Background="#FF93E8E8"/>
+            <ListBoxItem>
+                <TextBox x:Name="l1" Text="29 45 22 40 37 42 15 27 50 36 54 26 59 63 47 20 84 57 23 58" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            </ListBoxItem>
+        </ListBox>
+
+
+        <Button Grid.Row="1" Content="Посчитать" Margin="0,42" Click="Button_Click" Background="#FFAEADC9"/>
+        <TextBlock Grid.Row="1" x:Name="tb1" Text="Количество четных чисел" Margin="20, 0, 0, 0" Height="30" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

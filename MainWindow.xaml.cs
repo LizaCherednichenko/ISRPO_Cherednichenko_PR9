@@ -39,5 +39,11 @@ namespace ISRPO_Cherednichenko_PR9
             Window window1 = new Window1();
             window1.Show();
         }
+
+        private void indZ_Click(object sender, RoutedEventArgs e)
+        {
+            Window window2 = new Window2();
+            window2.Show();
+        }
     }
 }
